@@ -1,0 +1,161 @@
+@import url('common.css');
+
+#warp{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-width: 1920px;
+}
+
+header{
+    width: 100%;
+    min-width: 1920px;
+    /* height: 130px */
+    margin: 0 auto;
+    /* background: #000; */
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+}
+header li{
+    /* font-size: 1.2em; */
+    padding: 27px;
+    height: 65px;
+}
+header a, header span{
+    color: #fff;
+    font-size: 0.9em;
+}
+
+header .header_first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+header .header_first .nav_first_left{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+
+header .header_first .nav_first_left li:first-child{
+    border-right: 1px solid #fff;
+}
+header .header_first .nav_first_left li:nth-of-type(2){
+    padding-right: 0;
+    padding-left: 60px;
+}
+header .header_first .nav_first_left li:nth-of-type(2) a img{
+    width: 10%;
+}
+header .header_first .nav_first_left li:nth-of-type(2) span{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+header .header_first .nav_first_right{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+header .header_first .nav_first_right li:first-child{
+    border-right: 1px solid #fff;
+    padding-right: 0;
+}
+header .header_first .nav_first_right > li > a img{
+    width: 8%;
+}
+header .header_first .nav_first_right > li > a > span{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 0.85em;
+}
+header .header_first .nav_first_right li:last-child{
+    width: 90%; height: 20px;
+    position: relative;
+}
+header .header_first .nav_first_right li:last-child span{
+    width: 50%; height: 2px;
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translatex(-50%);
+    background: #fff;
+}
+header .header_first .nav_first_right li:last-child span:last-child{
+    top: 35px; left: 40%;
+    width: 30%;
+}
+
+/* header_two */
+header .header_two{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* position: relative;
+    top: -75px; left: 0;
+    z-index: 110; */
+}
+header .header_two ul{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+header .header_two ul:first-child{
+    border-right: none;
+}
+header .header_two ul:last-child{
+    border-left: none;
+}
+header .header_two ul li{
+    display: inline-block;
+    padding: 27px 44px;
+    border-left: 1px solid #fff;
+}
+header .header_two ul li:first-child{
+    border-left: none;
+}
+header .header_two ul li a{
+    text-transform: uppercase;
+}
+header .header_two h1{
+    width: 20%;
+    border: 1px solid #fff;
+    /* position: relative;
+    top: 0; left: 0;
+    z-index: 110; */
+}
+header .header_two h1 a{
+    display: inline-block;
+    padding: 33px 100px 34px 100px;
+}
+
+.content{}
+
+/* visual */
+.content .visual{
+    width: 100%
+}
+.content .visual figure{}
+.content .visual figure img{
+    max-width: 100%;
+}
+.content .visual figure figcaption{
+    font-size: 6em;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 60%; left: 35%;
+}

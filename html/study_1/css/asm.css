@@ -1,0 +1,342 @@
+@import url('common.css');
+
+body{
+    background: #f2f2f2
+}
+
+/* header */
+header{
+    width: 100%;
+    padding: 40px 20px;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    /* border: 1px solid #f00; */
+
+} 
+
+header h1{
+    color: #fff;
+    /* display: inline-block; */
+    /* border: 1px solid #f00; */
+}
+header h1 > span{
+    font-size: 0.9em;
+    color: #ccc;
+    font-weight: normal;
+}
+
+/* nav */
+header nav{
+
+}
+header nav p{
+    color: #fff;
+    display: inline-block;
+}
+header nav div{
+    display: inline-block;
+    width:20px; height: 15px;
+    position: relative;
+}
+header nav div span{
+    width:100%; height:2px;
+    background:#fff;
+    display: inline-block;
+    position: absolute;
+    left: 0; top: 0;
+}
+header nav span:nth-child(2){
+    top: 8px
+}
+header nav span:nth-child(3){
+    top: 15px;
+}
+
+ /* visual */
+ .visual{
+    width: 100%;
+    position: relative;
+ }
+ /* .visual figure{
+    width: 100%;
+    border: 1px solid #f00; 
+ }
+.visual figure > p{
+    width: 100%;
+}
+.visual figure p img{
+    width: 100%;
+    object-fit: ;
+}
+.visual figcaption{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+.visual figcaption span{
+    display: block;
+    color: #ccc;
+}
+.visual figcaption span::after{
+    color: #ccc;
+    content: '';
+    display: block;
+}
+.visual figcaption strong{
+    display: block;
+    color: #fff;
+    font-size: 7em;
+} */
+.visual div{
+    width: 100%; height: 950px;
+    background: url('../img/slide05.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.visual div > p{
+    transform: translateY(300px);
+}
+.visual div p:first-child{
+    color: #fff;
+    /* border: 1px solid #f00; */
+    /* transform: translateY(50%); */
+}
+.visual div p:first-child::after{
+    content: '';
+    display: block;
+    width: 300px; height: 1px;
+    background: #fff;
+    margin: 40px auto 0 auto;
+    /* border: 1px solid #f00; */
+}
+.visual div p:last-child{
+    color: #fff;
+    font-size: 10em;
+    /* border: 1px solid #f00; */
+    /* transform: translateY(100%); */
+}
+.visual nav{
+    position: absolute;
+    left: 50%; bottom: 5%;
+    transform: translateX(-38%);
+    text-align: center;
+}
+.visual nav a{
+    width: 25px; height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #fff;
+}
+.visual nav a:hover{
+    /* font-size: 2em;
+    font-weight: bold; */
+    transform: scale(1.5);
+}
+
+/* content_one */
+.content_one{
+    width: 80%;
+    margin: 100px auto;
+    /* border: 1px solid #F00; */
+}
+.content_one ul{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content_one ul li{
+    width: 48%;
+    background: #fff;
+    /* border: 1px solid #F00; */
+}
+.content_one ul li figure{
+    width: 100%;
+}
+.content_one ul li figure p{
+    width: 100%;
+}
+.content_one ul li figure p img{
+    width: 100%;
+}
+.content_one ul li figure figcaption{
+    width: 100%;
+    padding: 50px 65px 40px;
+    text-align: center;
+}
+.content_one ul li figure figcaption span{
+    color: #999;
+    display: block;
+}
+.content_one ul li figure figcaption span:first-child{
+    font-size: 0.9em;
+    letter-spacing: .2em;
+}
+.content_one ul li figure figcaption span:first-child::after{
+    content: '';
+    display: block;
+    width: 50%; height: 1px;
+    background: #ccc;
+    margin: 20px auto 10px;
+}
+.content_one ul li figure figcaption strong{
+    font-size: 2.5em;
+}
+.content_one ul li figure figcaption span:last-child{
+    font-size: 1.0em;
+    text-align: left;
+    white-space: pre-line;
+    letter-spacing: .1em;
+    display: block;
+    padding-top: 50px;    
+}
+.content_one ul li > p{
+    width: 100%; height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing:border-box;
+}
+.content_one ul li > p a{
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+}
+.content_one ul li > p a:hover{
+    background: #eceaea;
+}
+
+/* content_two */
+.content_two{
+    width: 100%;
+}
+.content_two div{
+    width: 100%; height: 400px;
+    background: url('../img/slide02.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* text-align: center; */
+    position: relative;
+}
+.content_two div p{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+.content_two div p:first-child{
+    top: 40%;
+}
+.content_two div p:first-child::after{
+    content: '';
+    display: block;
+    width: 85%; height: 1px;
+    background: #fff;
+    margin: 5px auto;
+}
+.content_two div p:last-child{
+    font-size: 2em;
+}
+
+/* content_three */
+.content_three{
+    width: 80%;
+    min-width: 1300px;
+    margin: 100px auto;
+    /* border: 1px solid #f00; */
+    text-align: center;
+}
+.content_three p:first-child{
+    letter-spacing: .1em;
+    color: #999;
+}
+.content_three p:first-child::after{
+    content: '';
+    display: block;
+    width: 40%; height: 1px;
+    margin: 10px auto;
+    background: #ccc;
+}
+.content_three p:nth-of-type(2){
+    font-size: 2em;
+}
+
+.content_three ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.content_three ul li{
+    width: 48%;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 50px;
+}
+.content_three ul li img{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    border: 1px solid #fff;
+}
+footer nav{
+    width: 100%; height: 220px;
+    background: #999;
+}
+footer nav a{
+    width: 35px; height: 35px;
+    display: inline-block;
+    margin-top: 70px;
+}
+footer nav a img{
+    width: 100%;
+}
+
+footer p{
+    transform: translateY(-80px);
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

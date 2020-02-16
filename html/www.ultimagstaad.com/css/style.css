@@ -1,0 +1,103 @@
+@import url('common.css');
+
+#warp{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header_total */
+header ul{
+    border: 1px solid #ccc;
+    /* padding: 27px; */
+}
+header ul li{
+    padding: 27px;
+    border-right: 1px solid #ccc;
+    display: inline-block;
+    margin: 0;
+}
+
+header ul li a, header ul li p{
+    font-size: 1.2em;
+}
+
+header .header_first{
+    width: 1820px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav_first_left */
+header .header_first .nav_first_left{
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+header .header_first .nav_first_left li{
+    /* border-right: none; */
+}
+/* header .header_first .nav_first_left li:nth-of-type(1){
+    width: 10%;
+}
+header .header_first .nav_first_left li:nth-of-type(2){
+    width: 13%;
+}
+header .header_first .nav_first_left::after{
+    width: 20%;
+    display: inline; */
+/* }         */
+/* header .header_first h1{
+    width: 14%;
+}
+header .nav_first_right::before{
+    width: 20%;
+}
+header .header_first .nav_first_right:nth-of-type(1){
+    width: 13%;
+}
+header .header_first .nav_first_right:nth-of-type(2){
+    width: 10%;
+} */
+
+
+
+
+/* header .header_first .nav_first_left li:nth-of-type(2)::after{
+    content: '';
+    width: 50%; height: 100%;
+    border: 1px solid #ccc;
+    display: block;
+} */
+
+
+
+header .header_first .nav_first_left li a{}
+header .header_first .nav_first_left li a img{}
+header .header_first .nav_first_left li:nth-of-type(2) a img{
+    width: 4%;
+}
+header .nav_first_left li a p{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/* h1 */
+header .header_first h1{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 27px;
+}
+
+/* .nav_first_right */
+header .nav_first_right{}
+header .nav_first_right li{}
+header .nav_first_right li a{}
+header .nav_first_right li a img{}
+header .nav_first_right li a p{}

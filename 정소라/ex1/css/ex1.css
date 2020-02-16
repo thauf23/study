@@ -1,0 +1,44 @@
+@import url('common.css');
+
+body{
+    width:1920px;
+    height: 1000px;
+    background: url('../img/635343ss.png') no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    width: 1920px;
+    margin: 0 auto;
+    
+}
+header img{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+header nav li{
+    float: right;
+    padding:10px 40px;
+}
+header nav li a{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.section{}
+.section figure{}
+.section figure img{}
+.section figure figcaption{
+    
+}
+.section figure figcaption h1{}
+.section figure figcaption h2{}
+.section figure figcaption h3{}
+.section figure figcaption p{
+    white-space: pre-line;
+}
