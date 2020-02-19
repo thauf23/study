@@ -1,0 +1,184 @@
+@import url('common.css');
+
+#wrap{}
+
+/* header */
+header{
+    width: 100%;
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+}
+header h1{
+    font-size: 5em;
+    color: #fff;
+}
+header h1 span{
+    display: block;
+    font: 1.5em;
+    color: #999;
+}
+
+header nav{}
+header nav a{
+    color: #999;
+    font-weight: 900;
+    padding: 15px 30px;
+    margin: 40px 10px; 
+}
+header nav a:first-child{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/* content / footer */
+.content{
+    width: 65%;
+    margin: 70px auto;
+    line-height: 1.8em;
+}
+.content_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+/* iridium */
+.iridium{
+    width:65%;
+}
+.iridium dl{}
+.iridium dl dt {}
+.iridium dl dt h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.iridium dl dt small{
+    font-size: 1.25em;
+}
+.iridium dl dd{
+    font-size: 0.95em;
+}
+.iridium dl dd:nth-of-type(1){
+    margin: 40px 0;
+}
+.iridium dl dd img{
+    width: 100%;
+}
+.iridium dl dd:nth-of-type(2){
+    margin-bottom: 15px;
+}
+.iridium dl dd strong{}
+.iridium dl dd a{
+    text-decoration: underline;
+}
+.iridium dl dd a:hover{
+    text-decoration: none;
+}
+
+/* pellentesque */
+.pellentesque{
+    width: 30%;
+}
+.pellentesque h3{}
+.pellentesque ul{}
+.pellentesque ul li{
+    border-bottom: 1px solid #ccc;
+    padding: 50px 0;
+}
+.pellentesque ul li dl{}
+.pellentesque ul li dl dt{
+    font-size: 0.8em;
+    color: #999;
+}
+.pellentesque ul li dl dd{
+    display: flex;
+    justify-content: space-between;
+}
+.pellentesque ul li dl dd p{
+    font-size: 0.9em;
+}
+.pellentesque ul li dl dd p:nth-of-type(1){
+    margin-right: 20px;
+}
+.pellentesque ul li dl dd img{}
+
+/* aenean */
+.aenean{}
+.aenean ul{
+    display: flex;
+    justify-content: space-between;
+}
+.aenean ul li{
+    margin-left: 50px;
+}
+.aenean ul li:first-child{
+    margin-left: 0;
+}
+.aenean ul li dl{}
+.aenean ul li dl dt{
+    font-size: 1.25em;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.aenean ul li dl dd:nth-of-type(2){
+    margin: 30px 0;
+    text-align: justify;
+}
+.aenean ul li dl dd img{
+    width: 100%;
+}
+.aenean ul li dl dd a{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    color: #fff;
+    background: #e95d3c;
+}
+.aenean ul li dl dd a:hover{
+    background: #9d2104;
+}
+
+
+/* footer */
+footer{}
+footer div{
+    background: #1d1d1d;
+}
+footer ul{
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    width: 31%;
+}
+footer ul li dl{}
+footer ul li dl dt{
+    color: #fff;
+}
+footer div ul li dl dd{
+    border-bottom: 1px solid #343434;
+    padding: 5px 0;
+}
+footer ul li dl dd a{
+    color: #888;
+}
+footer ul li dl dd a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    background: #000;
+    text-align: center;
+    padding: 50px 0;
+    color: #575757;
+}
