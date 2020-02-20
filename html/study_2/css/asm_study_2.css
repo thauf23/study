@@ -22,6 +22,7 @@ header h1 span{
 
 header nav{}
 header nav a{
+    display: inline-block;
     color: #999;
     font-weight: 900;
     padding: 15px 30px;
@@ -70,11 +71,16 @@ header nav a:hover{
 .iridium dl dd img{
     width: 100%;
 }
+.iridium dl dd span{
+    white-space: pre-line;
+}
+
 .iridium dl dd:nth-of-type(2){
     margin-bottom: 15px;
 }
 .iridium dl dd strong{}
 .iridium dl dd a{
+    /* white-space: pre-line; */
     text-decoration: underline;
 }
 .iridium dl dd a:hover{
@@ -134,15 +140,18 @@ header nav a:hover{
     width: 100%;
 }
 .aenean ul li dl dd a{
+    display: inline-block;
     width: 50%;
     text-align: center;
     padding: 10px 0;
     border-radius: 30px;
     color: #fff;
     background: #e95d3c;
+    transition: .5s;
 }
 .aenean ul li dl dd a:hover{
     background: #9d2104;
+    /* transition: .5s; */
 }
 
 
