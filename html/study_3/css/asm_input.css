@@ -5,22 +5,313 @@
     position: relative;
 }
 
+/* header */
 header{
     width: 100%;
     position: absolute;
     left: 0; top: 0;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #f00;
+    align-items: center;
+    padding: 3vh;
+    z-index: 100;
+}
+header h1{
+    font-size: 1.2vw;
+    color: #fff;
+}
+header h1 span{
+    font-size: 0.9vw;
+    color: #999;
 }
 
 
 nav{
-    width: 30px; height: 15px;
-    border: 1px solid #f00;
+    width: 30px; height: 1.2vw;
 }
 nav span{
     display: block;
-    width: 100%; height: 2px;
+    width: 100%; height: 3px;
     background: #fff;
+    position: relative;
+    right: 0; top: 0;
+}
+nav span:nth-of-type(2){
+    top: 0.34vw;
+}
+nav span:nth-of-type(3){
+    top: 0.7vw;
+}
+
+/* content */
+.content{
+    width: 100%;
+    background: #e2e4e5;
+}
+
+/* visual */
+.visual{
+    width: 100%;
+    position: relative;
+}
+.visual video{
+    width: 100%;
+    display: block;
+}
+.visual div{
+    position: absolute;
+    left: 35vw; top: 20vw;
+    text-align: center;
+}
+.visual div p{
+    margin-bottom: 7vh;
+}
+.visual div p strong{
+    display: block;
+    color: #fff;
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+.visual div p small{
+    color: #bdbbbb;
+    white-space: pre-line;
+    font-size: 1.1vw;
+}
+.visual div p small a{
+    color: #fff;
+    font-size: 1.1vw;
+}
+.visual div > a{
+    color: #fff;
+    font-size: 1.1vw;
+    padding: 0.5vw 1vw 0.7vW;
+    background: #5993d4;
+    border-radius: 0.3vW;
+}
+.visual div > a:hover{
+    background: #6ca6e7;
+}
+
+/* dolor */
+.dolor{
+    width: 100%;
+}
+.dolor figure{
+    width: 76%;
+    margin: 5vw auto ;
+    
+}
+.dolor figure p{}
+.dolor figure p img{
+    width: 100%;
+    display: block;
+}
+.dolor figure figcaption{
+    padding: 4vw 2vw 2vw; 
+    text-align: center;
+    background: #fff;
+}
+.dolor figure figcaption strong{
+    font-size: 1.6vw;
+    display: block;
+    margin-bottom: 0.4vw;
+}
+.dolor figure figcaption span{
+    font-size: 1.1vw;
+    color: #8a8c8d;
+}
+.dolor figure figcaption p{
+    text-align: left;
+    line-height: 1.6vW;
+    color: #8a8c8d;
+    font-size: 1vw;
+}
+.dolor figure figcaption p:nth-of-type(1){
+    border-top: 1px solid #ccc;
+    margin-top: 2vw;
+    padding: 2vw 0;
+}
+
+/* list */
+.list{
+    width: 100%; height: 50vh;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.list ul{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw;
+}
+.list ul li{
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid #999;
+    padding: 0 2vw;
+}
+.list ul li strong{
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #fff;
+}
+.list ul li span{
+    font-size: 0.95vw;
+    display: block;
+    color: #b0b0b0;
+    padding: 3vw 0;
+}
+.list ul li a{
+    width: 10vw;
+    color: #fff;
+    font-size: 1.1vw;
+    padding: 0.5vw 0 0.7vw;
+    border: 1px solid #b0b0b0;
+    border-radius: 0.3vw;
+}
+
+/* total */
+.total{
+    width: 76%;
+    margin: 5vw auto ;
+    display: flex;
+    justify-content: space-between;
+}
+.total figure{
+    width: 45%;
+}
+.total figure p{}
+.total figure p img{
+    width: 100%;
+}
+.total figure figcaption{
+    padding: 4vw 2vw 2vw; 
+    text-align: center;
+    background: #fff;
+}
+.total figure figcaption strong{
+    font-size: 1.6vw;
+    display: block;
+    margin-bottom: 0.4vw;
+}
+.total figure figcaption span{
+    font-size: 1.1vw;
+    color: #8a8c8d;
+}
+.total figure figcaption p{
+    text-align: left;
+    line-height: 1.6vW;
+    color: #8a8c8d;
+    border-top: 1px solid #ccc;
+    margin-top: 2vw;
+    padding-top: 2vw;
+    font-size: 1vw;
+}
+
+/* background */
+.background{
+    width: 100%; height: 38vh;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+.background p{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+    padding: 6vw 12vw;
+}
+.background p strong{
+    display: block;
+    color: #fff;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+.background p small{
+    color: #88898a;
+    font-size: 1.1vw;
+}
+
+
+
+
+
+/* content_input */
+.content_input{
+    width: 100%;
+    padding: 8vw 0 5vw;
+}
+.content_input form{
+    width: 76%;
+    margin: 0 auto ;
+    padding: 3vw 2vw 3vw;
+    background: #fff;
+}
+.content_input form h2{
+    text-align: center;
+    font-size: 1.5vw;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 1.5vw;
+}
+.form_first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_first div{
+    width: 49%;
+}
+.form_first div input{
+    width: 100%; height: 4vh;
+    background: #e2e4e5;
+    border: 1px solid #c4c4c4;
+    padding: 0 1vw;
+}
+form label{
+    display: block;
+    padding: 1.5vw 0 1.1vw;
+}
+form #department{
+    width: 100%; height: 4vh;
+    padding: 0 1vw;
+    background: #e2e4e5;
+}
+form #message{
+    width: 100%; height: 20vh;
+    padding: 1vw;
+    resize: none;
+    background: #e2e4e5;
+}
+form button{
+    width: 15%;
+    margin: 3vh auto 0;
+    display: block;
+    padding: 0.5vw 0;
+    background: #5993d4;
+    font-size: 1.1vw;
+    color: #fff;
+    border: none;
+    border-radius: 0.3vw;
+}
+form button:hover{
+    background: #6ca6e7;
+}
+
+/* footer */
+footer{
+    background: #e2e4e5;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 15vh;
+}
+footer p a{
+    color: #5993d4;
+    text-decoration: underline;
+}
+footer p a:hover{
+    text-decoration: none;
 }
